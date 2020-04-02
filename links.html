@@ -4,3 +4,57 @@
         <meta charset="utf-8">
         <title>zoe's links</title>
     </head>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+ 
+    <style>
+          body{
+            font-family: 'Caveat';
+            font-size: 31px;
+          }
+         ul { /* 取消ul預設的內縮及樣式 */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    
+        ul.drop-down-menu {
+            display: inline-block;
+            font-family: 'Caveat';
+            font-size: 30px;
+        }
+    
+        ul.drop-down-menu li {
+            position: relative;
+            white-space: nowrap;
+            
+        }
+    
+        ul.drop-down-menu > li:last-child {
+            border-right: none;
+        }
+    
+        ul.drop-down-menu > li {
+            float: right; 
+        }
+    
+         ul.drop-down-menu a {
+            background-color:none;
+            color: #333;
+            display: block;
+            padding: 0 60px;
+            text-decoration: none;
+            line-height: 40px;
+    
+        }
+        ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+            background-color: #6495ed;
+            color: #fff;
+        }
+        ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+            background-color: #6495ed;
+            color: #fff;
+        }
+        p{
+            font-family: '微軟正黑體','Caveat';
+        }
+    </style>    
