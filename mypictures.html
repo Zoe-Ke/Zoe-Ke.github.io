@@ -5,7 +5,13 @@
         <title>zoe's pictures</title>
     </head>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
- 
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $('a.top').click(function (e) { 
+     e.preventDefault();
+    $(document.body).animate({scrollTop: 0}, 80);
+ });
+    </script>
     <style>
           body{
             font-family: 'Caveat';
@@ -112,6 +118,6 @@
     </div>
     <div class="pic"><img src="./img/276757.jpg" alt=""/>
     </div>
-    
+    <a class="top" href="#">Back to top</a>
     </body>
 </html>
