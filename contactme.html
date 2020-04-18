@@ -5,7 +5,15 @@
         <title>Tell me something</title>
     </head>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
- 
+ <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="jqueryui/style.css">
+  <script>
+  $(function() {
+    $( "#radio" ).buttonset();
+  });
+  </script>
     <style>
           body{
             font-family: 'Caveat';
@@ -59,7 +67,7 @@
         }
     </style>    
     <body style="background-image:url(./img/sea.jpg);background-repeat: no-repeat;background-size: cover;">
-        <h1 style="height: 75px;text-align:center;" >Contact me</h1>
+        <h1 style="height: 75px;text-align:center;" >Tell me something</h1>
     <ul class="drop-down-menu">
         <li><a href="contactme.html">Tell me something</a>
         </li>
@@ -77,5 +85,12 @@
         <textarea name="contactme" cols="80" rows="10"  >想和我說...</textarea><br>
         <input type="submit" value="提交">
         <input type="reset" value="重新輸入">
+        <form>
+  <div id="radio">
+    <input type="radio" id="radio1" name="radio"><label for="radio1">喜歡</label>
+    <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">討厭</label>
+    <input type="radio" id="radio3" name="radio"><label for="radio3">沒感覺</label>
+  </div>
+</form>
     </body>
 </html>
