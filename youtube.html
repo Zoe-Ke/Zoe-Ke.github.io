@@ -5,7 +5,13 @@
         <title>zoe's youtube</title>
     </head>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
- 
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $('a.top').click(function (e) { 
+     e.preventDefault();
+    $(document.body).animate({scrollTop: 0}, 80);
+ });
+    </script>
     <style>
           body{
             font-family: 'Caveat';
@@ -82,5 +88,6 @@
     <iframe width="640" height="360" src="https://www.youtube.com/embed/8q-5EW9rUws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="640" height="360" src="https://www.youtube.com/embed/PO0KYO--pPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p style="text-align: left;">待更新(每周六晚上9:00準時鎖定!)</p>
-</body>
+ <a class="top" href="#">Back to top</a>
+    </body>   
 </html>
